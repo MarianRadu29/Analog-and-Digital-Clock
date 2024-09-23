@@ -1,0 +1,328 @@
+body{
+    background-color: darkgray;
+}
+.nav{
+    margin-top:75px;
+    margin-left: 550px;
+}
+
+a{
+    margin: 50px 50px;
+    padding: 15px;
+    font-size: 20px;
+}
+p{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 75px;
+}
+.nav a {
+
+    text-decoration: none;
+    color: hsl(0,0%,80%);
+    background-color: hsl(0, 0%, 30%);
+    border-radius: 5px;
+}
+.nav a:hover
+{
+    text-decoration: none;
+    color: hsl(0,0%,80%);
+    background-color: hsl(0, 0%, 40%);
+    border-radius: 5px;
+}
+.nav a:active
+{
+    text-decoration: none;
+    color: hsl(0,0%,80%);
+    background-color: hsl(0, 0%, 60%);
+    border-radius: 5px;
+}
+
+.clock {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: hsl(0,0%,90%);
+    border: 5px solid black;
+    margin-top: 75px;
+    margin-left: 550px;
+}
+
+.hour-mark {
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    background-color: black;
+    left: 50%;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    transform-origin: center 240px;
+}
+.hour-number {
+    position: absolute; 
+    font-size: 30px; 
+    font-weight: bold;
+    color: black; 
+    text-align: center; 
+    font-family:'Courier New', Courier, monospace;
+    transform: translate(-50%, -50%); /* Centreaza numarul pe pozitia sa */
+}
+
+/* Limbile ceasului */
+.hour-hand {
+    position: absolute;
+    width: 6px; 
+    height: 120px; 
+    background-color: black; 
+    left: 50%;
+    bottom: 50%;
+    transform-origin: bottom; 
+}
+
+.minute-hand {
+    position: absolute;
+    width: 4px; 
+    height: 150px; 
+    background-color: gray; 
+    left: 50%;
+    bottom: 50%;
+    transform-origin: bottom; 
+   
+}
+.second-hand {
+    position: absolute;
+    width: 2px; 
+    height: 200px; 
+    background-color: black; 
+    left: 50%;
+    bottom: 50%;
+    transform-origin: bottom; 
+}
+
+.minute-mark
+{
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    background-color: black;
+    left: 50%;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    transform-origin: center 240px;
+}
+
+/* Rotirea liniilor orare */
+.hour-mark:nth-child(1) { transform: rotate(0deg); }
+.hour-mark:nth-child(2) { transform: rotate(30deg); }
+.hour-mark:nth-child(3) { transform: rotate(60deg); }
+.hour-mark:nth-child(4) { transform: rotate(90deg); }
+.hour-mark:nth-child(5) { transform: rotate(120deg); }
+.hour-mark:nth-child(6) { transform: rotate(150deg); }
+.hour-mark:nth-child(7) { transform: rotate(180deg); }
+.hour-mark:nth-child(8) { transform: rotate(210deg); }
+.hour-mark:nth-child(9) { transform: rotate(240deg); }
+.hour-mark:nth-child(10) { transform: rotate(270deg); }
+.hour-mark:nth-child(11) { transform: rotate(300deg); }
+.hour-mark:nth-child(12) { transform: rotate(330deg); }
+
+/* Rotirea liniilor minute */
+.minute-mark:nth-child(1) { transform: rotate(0deg); }
+.minute-mark:nth-child(2) { transform: rotate(6deg); }
+.minute-mark:nth-child(3) { transform: rotate(12deg); }
+.minute-mark:nth-child(4) { transform: rotate(18deg); }
+.minute-mark:nth-child(5) { transform: rotate(24deg); }
+.minute-mark:nth-child(6) { transform: rotate(30deg); }
+.minute-mark:nth-child(7) { transform: rotate(36deg); }
+.minute-mark:nth-child(8) { transform: rotate(42deg); }
+.minute-mark:nth-child(9) { transform: rotate(48deg); }
+.minute-mark:nth-child(10) { transform: rotate(54deg); }
+.minute-mark:nth-child(11) { transform: rotate(60deg); }
+.minute-mark:nth-child(12) { transform: rotate(66deg); }
+.minute-mark:nth-child(13) { transform: rotate(72deg); }
+.minute-mark:nth-child(14) { transform: rotate(78deg); }
+.minute-mark:nth-child(15) { transform: rotate(84deg); }
+.minute-mark:nth-child(16) { transform: rotate(90deg); }
+.minute-mark:nth-child(17) { transform: rotate(96deg); }
+.minute-mark:nth-child(18) { transform: rotate(102deg); }
+.minute-mark:nth-child(19) { transform: rotate(108deg); }
+.minute-mark:nth-child(20) { transform: rotate(114deg); }
+.minute-mark:nth-child(21) { transform: rotate(120deg); }
+.minute-mark:nth-child(22) { transform: rotate(126deg); }
+.minute-mark:nth-child(23) { transform: rotate(132deg); }
+.minute-mark:nth-child(24) { transform: rotate(138deg); }
+.minute-mark:nth-child(25) { transform: rotate(144deg); }
+.minute-mark:nth-child(26) { transform: rotate(150deg); }
+.minute-mark:nth-child(27) { transform: rotate(156deg); }
+.minute-mark:nth-child(28) { transform: rotate(162deg); }
+.minute-mark:nth-child(29) { transform: rotate(168deg); }
+.minute-mark:nth-child(30) { transform: rotate(174deg); }
+.minute-mark:nth-child(31) { transform: rotate(180deg); }
+.minute-mark:nth-child(32) { transform: rotate(186deg); }
+.minute-mark:nth-child(33) { transform: rotate(192deg); }
+.minute-mark:nth-child(34) { transform: rotate(198deg); }
+.minute-mark:nth-child(35) { transform: rotate(204deg); }
+.minute-mark:nth-child(36) { transform: rotate(210deg); }
+.minute-mark:nth-child(37) { transform: rotate(216deg); }
+.minute-mark:nth-child(38) { transform: rotate(222deg); }
+.minute-mark:nth-child(39) { transform: rotate(228deg); }
+.minute-mark:nth-child(40) { transform: rotate(234deg); }
+.minute-mark:nth-child(41) { transform: rotate(240deg); }
+.minute-mark:nth-child(42) { transform: rotate(246deg); }
+.minute-mark:nth-child(43) { transform: rotate(252deg); }
+.minute-mark:nth-child(44) { transform: rotate(258deg); }
+.minute-mark:nth-child(45) { transform: rotate(264deg); }
+.minute-mark:nth-child(46) { transform: rotate(270deg); }
+.minute-mark:nth-child(47) { transform: rotate(276deg); }
+.minute-mark:nth-child(48) { transform: rotate(282deg); }
+.minute-mark:nth-child(49) { transform: rotate(288deg); }
+.minute-mark:nth-child(50) { transform: rotate(294deg); }
+.minute-mark:nth-child(51) { transform: rotate(300deg); }
+.minute-mark:nth-child(52) { transform: rotate(306deg); }
+.minute-mark:nth-child(53) { transform: rotate(312deg); }
+.minute-mark:nth-child(54) { transform: rotate(318deg); }
+.minute-mark:nth-child(55) { transform: rotate(324deg); }
+.minute-mark:nth-child(56) { transform: rotate(330deg); }
+.minute-mark:nth-child(57) { transform: rotate(336deg); }
+.minute-mark:nth-child(58) { transform: rotate(342deg); }
+.minute-mark:nth-child(59) { transform: rotate(348deg); }
+.minute-mark:nth-child(60) { transform: rotate(354deg); }
+.minute-mark:nth-child(61) { transform: rotate(0deg); }
+.minute-mark:nth-child(62) { transform: rotate(6deg); }
+.minute-mark:nth-child(63) { transform: rotate(12deg); }
+.minute-mark:nth-child(64) { transform: rotate(18deg); }
+.minute-mark:nth-child(65) { transform: rotate(24deg); }
+.minute-mark:nth-child(66) { transform: rotate(30deg); }
+.minute-mark:nth-child(67) { transform: rotate(36deg); }
+.minute-mark:nth-child(68) { transform: rotate(42deg); }
+.minute-mark:nth-child(69) { transform: rotate(48deg); }
+.minute-mark:nth-child(70) { transform: rotate(54deg); }
+.minute-mark:nth-child(71) { transform: rotate(60deg); }
+.minute-mark:nth-child(72) { transform: rotate(66deg); }
+/*am adaugat in plus,e ceva bug*/
+
+/*---------------*/
+.clock-digital
+{
+    position: relative;
+    border-radius: 5%;
+    width: 450px;
+    height: 100px;
+    background-color: hsl(0,0%,80%);
+    border: 5px solid black;
+    margin-top: 100px;
+    margin-left: 550px;
+
+}
+
+
+@media (max-width: 1080px) {
+    .clock {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: hsl(0,0%,90%);
+        border: 5px solid black;
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-right: 5px;
+    }
+    .hour-mark {
+        position: absolute;
+        width: 4px;
+        height: 12px;
+        background-color: black;
+        left: 50%;
+        top: 5px;
+        bottom: 5px;
+        right: 5px;
+        transform-origin: center 120px;
+    }
+    .minute-mark
+    {
+        position: absolute;
+        width: 2px;
+        height: 5px;
+        background-color: black;
+        left: 50%;
+        top: 5px;
+        bottom: 5px;
+        right: 5px;
+        transform-origin: center 120px;
+    }
+
+    .hour-hand {
+        position: absolute;
+        width: 4px; 
+        height: 60px; 
+        background-color: black; 
+        left: 50%;
+        bottom: 50%;
+        transform-origin: bottom; 
+    }
+    
+    .minute-hand {
+        position: absolute;
+        width: 3px; 
+        height: 70px; 
+        background-color: gray; 
+        left: 50%;
+        bottom: 50%;
+        transform-origin: bottom; 
+       
+    }
+    .second-hand {
+        position: absolute;
+        width: 2px; 
+        height: 90px; 
+        background-color: black; 
+        left: 50%;
+        bottom: 50%;
+        transform-origin: bottom; 
+    }
+
+    .hour-number {
+        position: absolute; 
+        font-size: 20px; 
+        font-weight: bold;
+        color: black; 
+        text-align: center; 
+        font-family:'Courier New', Courier, monospace;
+        transform: translate(-50%, -50%); /* Centreaza numarul pe pozitia sa */
+    }
+    
+    
+    .nav{
+        margin-top:50px;
+        margin-left: 5px;
+    }
+
+    a{
+        margin: 10px 10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    p{
+        margin-top: 7px;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    .clock-digital
+    {
+        position: relative;
+        border-radius: 5%;
+        width: 200px;
+        height: 50px;
+        background-color: hsl(0,0%,80%);
+        border: 5px solid black;
+        margin-top: 50px;
+        margin-left: 70px;
+
+    }
+   
+    
+}
